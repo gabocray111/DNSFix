@@ -1,6 +1,6 @@
 :: DNSFix - Script creado por Gabocray111
 :: Licencia MIT - ver LICENSE en el repositorio oficial
-:: https://github.com/Gabocray111/diagnostico-dns
+:: https://github.com/gabocray111/DNSFix
 
 @echo off
 title Diagnostico Avanzado de DNS y Conexion - Minecraft
@@ -295,3 +295,4 @@ del "%temp%\dns_tmp.txt" >nul 2>&1
 echo Proceso finalizado. Presiona una tecla para cerrar...
 pause >nul
 exit /b 0
+
