@@ -9,6 +9,10 @@ setlocal enabledelayedexpansion
 :: ------------------------------------------------------------
 :: Configurable
 :: ------------------------------------------------------------
+echo ========================================================
+echo  DIAGNOSTICO AVANZADO DE DNS Y CONEXION - Licencia MIT 
+echo  Creado por Gabocray111 - github.com/gabocray111/DNSFix
+echo ========================================================
 set /p SERVER=Ingresa  el dominio o IP a diagnosticar 
 set REPORTFILE=%~dp0diagnostico_dns_report.txt
 
@@ -24,9 +28,6 @@ if %errorlevel% equ 0 (
 )
 
 cls
-echo ============================================================
-echo    DIAGNOSTICO AVANZADO DE DNS Y CONEXION - MINECRAFT
-echo ============================================================
 echo Servidor objetivo: %SERVER%
 echo.
 
@@ -295,4 +296,5 @@ del "%temp%\dns_tmp.txt" >nul 2>&1
 echo Proceso finalizado. Presiona una tecla para cerrar...
 pause >nul
 exit /b 0
+
 
